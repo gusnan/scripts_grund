@@ -1,0 +1,47 @@
+
+
+1.
+
+* ls -la [a]*[!e]
+
+	Alla filer där första bokstaven är a, och sista INTE är e.
+	
+* ls -la *[f-i]?
+
+	Alla filer där näst sista bokstaven är mellan (eller inklusive) f och i.
+	
+* ls -la ????.[co]
+
+	Alla filer på 4 tecken med filändelsen c eller o.
+
+2.
+
+ls -la [a]*.c
+
+3.
+
+kommandot omdirigerar ls -la till filen /test/test, och iom att >> används
+så läggs utdatan av kommandot till filen, utan att den töms.
+
+
+4.
+
+ls / -alR | gzip -c > ls-laR.gz 2>ls-laR-errors.txt
+
+5.
+
+Den innehåller de mappar som systemet kollar igenom när den söker efter 
+ett kommando som man skriver i terminalen. 
+
+6.
+
+Systemet kör en top när man loggar ur systemet. 
+
+7.
+
+pushd lagrar aktuell mapp i en stack, och man kan återkalla den igen med popd -
+dirs används för att lista innehållet i stacken.
+
+8.
+
+
