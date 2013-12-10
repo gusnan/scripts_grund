@@ -6,17 +6,22 @@
 
 total=0;
 
+# Läs rader, en efter en
 while read line
 do
 	if [ ! -z $line ]; then
+		# Lägg till värdet på raden till "total"-variabeln
 		total=$[ total+ $line];
 	fi 
-done <betyg.txt
+done <betyg.txt # Vi läser från betyg.txt
 
 echo "Totalpoäng: $total";
 
 betyg="IG";
 
+# Vi måste kolla om den är större än (eller lika med) 48 före vi kolla om den 
+# är större än (eller lika med) 30, annars så kommer inte kontrollen av 
+# VG-betyget göras om redan if-satsen för G är giltig.
 if [ $total -ge 48 ]; then
 	betyg="VG";
 elif [ $total -ge 30 ]; then
