@@ -1,3 +1,4 @@
+#!/bin/bash
 # Laboration 4, Uppgift 1
 # 
 # Skriv ett skript som ber användaren om två tal och skriver ut de två talen med alla fyra

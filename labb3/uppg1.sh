@@ -1,3 +1,4 @@
+#!/bin/bash
 
 # Vi initierar båda variabler till värdet 0
 variabel1=0;

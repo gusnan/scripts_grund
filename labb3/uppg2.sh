@@ -1,3 +1,4 @@
+#!/bin/bash
 # Uppgift 2
 #
 # Skriv ett skript som försöker öppna filen recept.txt, kontrollera om filen

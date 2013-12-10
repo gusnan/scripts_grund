@@ -1,3 +1,4 @@
+#!/bin/bash
 # Uppgift 3
 #
 # Skriv ett skript som ber användaren om ett tal mellan 1 och 10, om användaren 

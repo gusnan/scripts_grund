@@ -1,3 +1,4 @@
+#!/bin/bash
 # Uppgift 4
 #
 # Skriv ett skript som visar vilken typ av fil (vanlig fil, katalog, länk,
