@@ -1,3 +1,4 @@
+#!/bin/bash
 # Laboration 5 - Uppgift 2
 #
 # Skriv ett skript som låter användaren mata in ett tal mellan 10 och 100, 
