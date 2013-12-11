@@ -11,7 +11,7 @@ konvertera_vad="";
 
 # Jag räknar med att en dollar är 7 kronor pga att flyttal 
 # funkar "sådär" i bash...
-aktuell_dollar_kurs=7;
+aktuell_dollar_kurs=6.5;
 
 
 # Mata in om vi vill konvertera från dollar eller kronor
@@ -26,7 +26,8 @@ if [ "$konvertera_vad" = "k" ]; then
 	read -p "Hur många kronor: " kronor;
 	
 	#Gör beräkningen
-	let dollar=$kronor/aktuell_dollar_kurs;
+	#let dollar=($kronor/aktuell_dollar_kurs) | bc;
+	dollar=$(echo " scale=4; $kronor / $aktuell_dollar_kurs" | bc);
 	
 	echo "$kronor kronor är $dollar dollar.";
 
@@ -37,7 +38,8 @@ elif [ "$konvertera_vad" = "d" ]; then
 	read -p "Hur många dollar: " dollar;
 	
 	# Gör beräkningen
-	let kronor=$dollar*aktuell_dollar_kurs;
+	kronor=$(echo "$dollar * $aktuell_dollar_kurs" | bc);
+	# let kronor=$dollar*aktuell_dollar_kurs;
 	echo "$dollar dollar är $kronor kronor.";
 
 else
