@@ -12,3 +12,8 @@ until [ "$number" -eq 0 ]; do
 done
 
 echo "Allt klart!";
+
+# Testa en for-loop
+for (( Number=0; Number<13; Number++ )) do
+	printf "Number: $Number\n";
+done
